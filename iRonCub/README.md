@@ -9,5 +9,5 @@
   - `model_stl.urdf` -> model with stl meshes
 
 - `iRonCub-Mk3_Mujoco`: model compatible with the Mujoco simulator;
-  - `iRonCub.xml`: xml model to be used in
+  - `iRonCub.xml`: xml model to be used in the Mujoco simulator
 
