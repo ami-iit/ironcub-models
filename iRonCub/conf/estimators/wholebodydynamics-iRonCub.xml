@@ -2,54 +2,6 @@
 <!DOCTYPE devices PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
 
 <devices robot="@WBD_YARP_ROBOT_NAME@" build="1">
-    <device name="secondaryCalibration_l_arm_ft" type="ftSecondaryCalibImpl">
-        <param name="period">      0.01      </param>
-        <param name="sensorName">  l_arm_ft  </param>
-        <xi:include href="./dummy_calibration_models/4th_order_dummy.xml" />
-        <action phase="startup" level="6" type="attach">
-            <paramlist name="networks">
-                <elem name="left-arm-ft-client">icub_left_arm_ft</elem>
-            </paramlist>
-        </action>
-        <action phase="shutdown" level="2" type="detach" />
-    </device>
-
-    <device name="secondaryCalibration_r_arm_ft" type="ftSecondaryCalibImpl">
-        <param name="period">      0.01      </param>
-        <param name="sensorName">  r_arm_ft  </param>
-        <xi:include href="./dummy_calibration_models/4th_order_dummy.xml" />
-        <action phase="startup" level="6" type="attach">
-            <paramlist name="networks">
-                <elem name="right-arm-ft-client">icub_right_arm_ft</elem>
-            </paramlist>
-        </action>
-        <action phase="shutdown" level="2" type="detach" />
-    </device>
-
-    <device name="secondaryCalibration_l_jet_ft" type="ftSecondaryCalibImpl">
-        <param name="period">      0.01      </param>
-        <param name="sensorName">  l_jet_ft  </param>
-        <xi:include href="./dummy_calibration_models/4th_order_dummy.xml" />
-        <action phase="startup" level="6" type="attach">
-            <paramlist name="networks">
-                <elem name="left-jet-ft-client">icub_left_jet_ft</elem>
-            </paramlist>
-        </action>
-        <action phase="shutdown" level="2" type="detach" />
-    </device>
-
-    <device name="secondaryCalibration_r_jet_ft" type="ftSecondaryCalibImpl">
-        <param name="period">      0.01      </param>
-        <param name="sensorName">  r_jet_ft  </param>
-        <xi:include href="./dummy_calibration_models/4th_order_dummy.xml" />
-
-        <action phase="startup" level="6" type="attach">
-            <paramlist name="networks">
-                <elem name="right-jet-ft-client">icub_right_jet_ft</elem>
-            </paramlist>
-        </action>
-        <action phase="shutdown" level="2" type="detach" />
-    </device>
 
     <device name="wholebodydynamics" type="wholebodydynamics">
         <param name="axesNames">(torso_pitch,torso_roll,torso_yaw,neck_pitch, neck_roll,neck_yaw,l_shoulder_pitch,l_shoulder_roll,l_shoulder_yaw,l_elbow,r_shoulder_pitch,r_shoulder_roll,r_shoulder_yaw,r_elbow,l_hip_pitch,l_hip_roll,l_hip_yaw,l_knee,l_ankle_pitch,l_ankle_roll,r_hip_pitch,r_hip_roll,r_hip_yaw,r_knee,r_ankle_pitch,r_ankle_roll)</param>
@@ -114,10 +66,10 @@
                 <!-- imu -->
                 <elem name="imu">head_inertial_hardware_device</elem>
                 <!-- ft -->
-                <elem name="l_arm_ft_sensor">secondaryCalibration_l_arm_ft</elem>
-                <elem name="r_arm_ft_sensor">secondaryCalibration_r_arm_ft</elem>
-                <elem name="l_jet_sensor">secondaryCalibration_l_jet_ft</elem>
-                <elem name="r_jet_sensor">secondaryCalibration_r_jet_ft</elem>
+                <elem name="l_arm_ft_sensor">icub_left_arm_ft</elem>
+                <elem name="r_arm_ft_sensor">icub_right_arm_ft</elem>
+                <elem name="l_jet_sensor">icub_left_jet_ft</elem>
+                <elem name="r_jet_sensor">icub_right_jet_ft</elem>
                 <elem name="l_foot_front_ft_sensor">icub_left_foot_front_ft</elem>
                 <elem name="l_foot_rear_ft_sensor">icub_left_foot_rear_ft</elem>
                 <elem name="r_foot_front_ft_sensor">icub_right_foot_front_ft</elem>

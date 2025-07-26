@@ -1,6 +1,8 @@
 
 cmake_minimum_required(VERSION 3.22.1)
-project(ironcub-models LANGUAGES NONE)
+project(ironcub-models
+  VERSION 0.0.1
+  LANGUAGES NONE)
 set(BUILD_PREFIX "iRonCub")
 include(GNUInstallDirs)
 
@@ -21,7 +23,7 @@ macro(SUBDIRLIST result curdir)
   set(${result} ${dirlist})
 endmacro()
 
-# Copy the ergoCub folder in the build tree
+# Copy the iRonCub folder in the build tree
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/${BUILD_PREFIX} DESTINATION ${CMAKE_BINARY_DIR})
 
 SUBDIRLIST(ROBOTS_NAMES ${CMAKE_CURRENT_SOURCE_DIR}/${BUILD_PREFIX}/robots)

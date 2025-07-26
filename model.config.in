@@ -2,10 +2,10 @@
 <model>
     <name>@ROBOT_NAME_CONFIG@</name>
     <version>1.0</version>
-    <sdf version='@ERGOCUB_MODELS_SDF_VERSION@'>@ROBOT_MODEL_CONFIG@</sdf>
+    <sdf version='@IRONCUB_MODELS_SDF_VERSION@'>@ROBOT_MODEL_CONFIG@</sdf>
     <author>
-        <name>Nicolo' Genesio</name>
-        <email>nicolo.genesio@iit.it</email>
+        <name>Davide Gorbani</name>
+        <email>davide.gorbani@iit.it</email>
     </author>
     <description>@ROBOT_MODEL_DESCRIPTION_CONFIG@</description>
 </model>
