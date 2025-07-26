@@ -3,12 +3,11 @@ cmake_minimum_required(VERSION 3.22.1)
 project(ironcub-models
   VERSION 0.0.1
   LANGUAGES NONE)
-set(BUILD_PREFIX "iRonCub")
+set(BUILD_PREFIX "iRonCub-Mk3")
 include(GNUInstallDirs)
 
 set(GAZEBO_SUPPORTED_MODELS "")
 list(APPEND GAZEBO_SUPPORTED_MODELS "iRonCub-Mk3_Gazebo")
-
 
 set(INSTALLED_URDF_MODELS "")
 
