@@ -1,0 +1,50 @@
+<!-- Copyright (C) 2019 Istituto Italiano di Tecnologia (IIT). All rights reserved.
+This software may be modified and distributed under the terms of the
+GNU Lesser General Public License v2.1 or any later version. -->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<devices>
+
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="head_imu_acc" type="multipleanalogsensorsclient">
+        <param name="remote">/icub/head/inertials</param>
+        <param name="local">/yarp_robot_logger/head_inertial</param>
+        <param name="timeout">0.5</param>
+        <param name="carrier">fast_tcp</param>
+    </device>
+
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="chest_imu_acc" type="multipleanalogsensorsclient">
+        <param name="remote">/icub/xsens_inertial_mas</param>
+        <param name="local">/yarp_robot_logger/chest_imu</param>
+        <param name="timeout">0.5</param>
+        <param name="carrier">fast_tcp</param>
+    </device>
+
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="l_arm_ft_imu_acc" type="multipleanalogsensorsclient">
+        <param name="remote">/icub/left_arm/imu</param>
+        <param name="local">/yarp_robot_logger/l_arm_ft_imu</param>
+        <param name="timeout">0.5</param>
+        <param name="carrier">fast_tcp</param>
+    </device>
+
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="r_arm_ft_imu_acc" type="multipleanalogsensorsclient">
+        <param name="remote">/icub/right_arm/imu</param>
+        <param name="local">/yarp_robot_logger/r_arm_ft_imu</param>
+        <param name="timeout">0.5</param>
+        <param name="carrier">fast_tcp</param>
+    </device>
+
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="l_foot_ft_imu_acc" type="multipleanalogsensorsclient">
+        <param name="remote">/icub/left_foot/imu</param>
+        <param name="local">/yarp_robot_logger/l_foot_ft_imu</param>
+        <param name="timeout">0.5</param>
+        <param name="carrier">fast_tcp</param>
+    </device>
+
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="r_foot_ft_imu_acc" type="multipleanalogsensorsclient">
+        <param name="remote">/icub/right_foot/imu</param>
+        <param name="local">/yarp_robot_logger/r_foot_ft_imu</param>
+        <param name="timeout">0.5</param>
+        <param name="carrier">fast_tcp</param>
+    </device>
+
+</devices>

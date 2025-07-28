@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<group name="modelClassParams">
+   <param name="np">1</param>
+   <param name="ny">6</param>
+   <param name="nu">7</param>
+   <param name="na">0</param>
+   <param name="nb">0</param>
+   <param name="string">1st_order_dummy</param>
+   <param name="row1">(1  0  0  0  0  0)</param>
+   <param name="row2">(0  1  0  0  0  0)</param>
+   <param name="row3">(0  0  1  0  0  0)</param>
+   <param name="row4">(0  0  0  1  0  0)</param>
+   <param name="row5">(0  0  0  0  1  0)</param>
+   <param name="row6">(0  0  0  0  0  1)</param>
+   <param name="row7">(0  0  0  0  0  0)</param>
+   <param name="row8">(0  0  0  0  0  0)</param>
+</group>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE devices PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
+
+    <device name="basestate_nws_yarp" type="analogServer">
+        <!-- See https://www.yarp.it/git-master/classAnalogWrapper.html#details for parameter documentation -->
+        <param name="name"> /icubSim/floating_base/state:o </param>
+        <param name="period"> 10 </param>
+        <action phase="startup" level="5" type="attach">
+            <!-- This is the same name that we passed with the yarpDeviceName to the basestate plugin -->
+            <param name="device"> gazebo_basestate </param>
+        </action>
+        <action phase="shutdown" level="5" type="detach" />
+    </device>
