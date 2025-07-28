@@ -1682,9 +1682,6 @@
     <plugin name="controlboard_head_without_eyes" filename="libgazebo_yarp_controlboard.so">
       <yarpConfigurationFile>model://iRonCub-Mk3/iRonCub/conf/gazebo_icub_head_without_eyes_V2_7.ini</yarpConfigurationFile>
     </plugin>
-    <plugin name="jets-plugin" filename="libjets-plugin.so">
-      <yarpConfigurationFile>model://iRonCub-Mk3/iRonCub/conf/jets.ini</yarpConfigurationFile>
-    </plugin>
     <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
       <yarpConfigurationFile>model://iRonCub-Mk3/iRonCub/conf/base.ini</yarpConfigurationFile>
     </plugin>
@@ -1748,9 +1745,6 @@
     </plugin>
     <plugin name="gzyarp::ForceTorque" filename="gz-sim-yarp-forcetorque-system">
       <yarpConfigurationFile>model://iRonCub-Mk3/iRonCub/conf/FT/gazebo_icub_right_foot_rear_ft.ini</yarpConfigurationFile>
-    </plugin>
-    <plugin name="gzyarp::JetsPlugin" filename="gz-sim-yarp-jets-plugin">
-      <yarpConfigurationFile>model://iRonCub-Mk3/iRonCub/conf/jets.ini</yarpConfigurationFile>
     </plugin>
     <plugin name="gzyarp::RobotInterface" filename="gz-sim-yarp-robotinterface-system">
       <yarpRobotInterfaceConfigurationFile>model://iRonCub-Mk3/iRonCub/conf/iRonCub.xml</yarpRobotInterfaceConfigurationFile>
