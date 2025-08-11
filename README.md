@@ -16,7 +16,8 @@ make
 In order to use the model, the following env variables must be configured:
 ```sh
 # iRonCub model in YARP
-export YARP_DATA_DIRS=${YARP_DATA_DIRS}:<install-prefix>/share/iRonCub/robots
+export YARP_DATA_DIRS=${YARP_DATA_DIRS}:<install-prefix>/share/iRonCub-Mk3/iRonCub/robots
 # iRonCub model in Gazebo
-export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:<install-prefix>/share/iRonCub/robots
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:<install-prefix>/share/iRonCub-Mk3/iRonCub/robots
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:<install-prefix>/share
 ```
