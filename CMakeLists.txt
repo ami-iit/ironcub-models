@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.22.1)
 project(ironcub-models
-  VERSION 0.0.1
+  VERSION 0.0.2
   LANGUAGES NONE)
 set(BUILD_PREFIX "iRonCub-Mk3")
 include(GNUInstallDirs)
